@@ -11,6 +11,7 @@ import Login from "./pages/LoginPage";
 import Register from "./pages/RegisterPage";
 import ChatBot from "./components/Chatbot";
 import PostsPage from "./pages/PostPage";
+import NotFoundPage from "./pages/NotFound";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/login" element={<Login />}/>
             <Route path="/register" element={<Register />}/>
             <Route path="/posts" element={<PostsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
         <ChatBot />
